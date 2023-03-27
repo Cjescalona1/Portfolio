@@ -9,9 +9,8 @@
     position: fixed;
     top: 0;
     display: flex;
-    padding: auto , 5vh;
-    font-family: 'Poppins', sans-serif;
-    backdrop-filter: blur(10px);
+    padding: 2.5vh 5vh;
+    font-family: 'Poppins', sans-serif; 
 }
 .monoLogo{
     filter: invert(1);
