@@ -1,0 +1,9 @@
+.wrapper {  
+  height: 100vh;
+  width: 100vw;
+  background-color: cyan;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+
+}
