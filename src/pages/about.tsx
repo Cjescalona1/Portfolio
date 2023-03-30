@@ -6,7 +6,7 @@ const About = ()=>{
             About
 
             <div className={styles.expDesc}>
-                    I'm a proactive
+                    I`&apos;`m a proactive
                     <br /> 
                     <b>SOFTWARE DEVELOPER</b> 
                     <br />
