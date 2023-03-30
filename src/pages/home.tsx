@@ -8,7 +8,7 @@ const handleClick = (val:string)=>{
     document.getElementById(val)?.scrollIntoView({behavior:'smooth'}) 
 }
 
-const First = ()=>{
+const Home = ()=>{
     return( 
         <section className={styles.wrapper}>
             <div className={styles.left}> 
@@ -24,17 +24,17 @@ const First = ()=>{
                     <ul className={styles.links} >
                         <li >
                             <a className={myFont.className} onClick={()=>{handleClick("ExE")}}>
-                                Expertice and Experience 
+                                EXPERTICE & EXPERIENCE 
                             </a>
                         </li>
                         <li  >
                             <a className={myFont.className} onClick={()=>{handleClick("About")}}>
-                                About me
+                                ABOUT ME
                             </a>
                         </li>
                         <li >
                             <a className={myFont.className} onClick={()=>{handleClick("Contact")}}>
-                                Contact
+                                CONTACT
                             </a>
                         </li>
                     </ul>
@@ -48,4 +48,4 @@ const First = ()=>{
     )
 }
 
-export default First;
+export default Home;

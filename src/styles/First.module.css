@@ -27,7 +27,7 @@
 .rigth{
     width: 45vw;
     background-color: transparent;
-    font-family: Ga;
+   
 }
 .buttonScroll{
     cursor:pointer;
@@ -101,7 +101,7 @@
 
   .links>li>a:hover{ 
     cursor: pointer;
-    font-weight: 600; 
+    font-style: italic;
     }
 
 

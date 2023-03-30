@@ -46,7 +46,7 @@
     font-weight: bold;
 }
 .barItems>li::before{
-    content: " > ";
+    content: " // ";
     font-weight: bolder;
 }
 
