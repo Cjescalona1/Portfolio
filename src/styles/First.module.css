@@ -2,14 +2,15 @@
 .wrapper{
     width: 100vw;
     height: 100vh;
-    padding: 4em 6em;
+    padding: 5em 6em;
     display: flex;
     /* background-color: rgba(0, 0, 0, 0.228); */
     /* background:linear-gradient(180deg, rgb(116, 116, 116) 0%, rgba(200, 200, 200, 0.100) 100%); */
     background-image: url('/firstBG.jpeg');
     background-repeat: no-repeat;
     background-size: cover;  
-    margin-top: 5em;  
+    margin-top: 0em; 
+
     box-shadow: inset 0 -25px 130px 100px rgb(0 25 68);
     
 } 

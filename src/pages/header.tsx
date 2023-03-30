@@ -10,7 +10,7 @@ const Header = ()=>{
         document.getElementById(val)?.scrollIntoView({behavior:'smooth'}) 
     }
     return(
-        <div className={styles.header} >
+        <header className={styles.header} >
             <Link
               href="/"
               target="_self"
@@ -26,7 +26,7 @@ const Header = ()=>{
               />
             </Link>
             
-            <div className={styles.barWrap} >
+            <nav className={styles.barWrap} >
                 <div className={styles.barCont}>
                     <ul className={styles.barItems}>
                         <li>
@@ -51,8 +51,8 @@ const Header = ()=>{
                         </li>    
                     </ul>
                 </div>
-            </div>
-        </div>
+            </nav>
+        </header>
         
     )
 }
