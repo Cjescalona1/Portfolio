@@ -24,7 +24,7 @@ const Home = ()=>{
                     <ul className={styles.links} >
                         <li >
                             <a className={myFont.className} onClick={()=>{handleClick("ExE")}}>
-                                EXPERTICE & EXPERIENCE 
+                                EXPERIENCE & EXPERTICE  
                             </a>
                         </li>
                         <li  >

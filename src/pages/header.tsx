@@ -36,7 +36,7 @@ const Header = ()=>{
                         </li>
                         <li >
                             <a className={styles.NavItem}   onClick={()=>{handleClick("ExE")}}>
-                                Expertice and Experience 
+                                Experience & Expertice 
                             </a>
                         </li>
                         <li >
