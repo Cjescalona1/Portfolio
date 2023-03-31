@@ -124,8 +124,7 @@
              padding: 1.5em; 
           }
   .parent>*:hover{
-    transform:  scale(1.2);
-    filter: brightness(1.5);
+    transform:  scale(1.2); 
   }
    
 
