@@ -121,12 +121,12 @@
   .parent>*{ background-color:hsla(0, 0%, 96%, 0.551) ;
              width:220px; 
              height:220px;
-             padding: 1.5em;
+             padding: 1.5em; 
+          } 
 
-          }
   .parent>*>img{ width: 80%;
                  height: 90%;
-                }
+                } 
 
   .div1 { grid-area: 1 / 1 / 2 / 2; } 
   .div2 { grid-area: 1 / 2 / 2 / 3; }
