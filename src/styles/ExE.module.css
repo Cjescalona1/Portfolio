@@ -96,7 +96,7 @@
 	width: calc(40vw * 8);
 }
 
-.itemCarousel>article>figure>img{
+.itemCarousel>article>figure>Image{
   height: 400px;
   width: 45em;
   object-fit: contain; 
