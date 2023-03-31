@@ -10,6 +10,7 @@
     display: flex;
     padding: 2.5vh 5vh;
     font-family: 'Poppins', sans-serif; 
+    z-index: 10;
 }
 .monoLogo{
     filter: invert(1);

@@ -125,14 +125,11 @@
           }
   .parent>*:hover{
     transform:  scale(1.2); 
-  }
-   
+  }   
 
   .parent>*>img{ width: 80%;
                  height: 90%;
-                }
-   
- 
+              }
 
   .div1 { grid-area: 1 / 1 / 2 / 2; } 
   .div2 { grid-area: 1 / 2 / 2 / 3; }
