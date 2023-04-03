@@ -8,9 +8,8 @@
     /* background:linear-gradient(180deg, rgb(116, 116, 116) 0%, rgba(200, 200, 200, 0.100) 100%); */
     background-image: url('/firstBG.jpeg');
     background-repeat: no-repeat;
-    background-size: cover;  
+    background-size: 100% 100%;  
     margin-top: 0em; 
-
     box-shadow: inset 0 -25px 130px 100px rgb(0 25 68);
     
 } 
@@ -23,6 +22,7 @@
     font-size: 11em;
     text-shadow: rgba(247, 247, 247, 0.49) -5px 5px 20px;
     font-weight: 500;
+    line-height: 1;
 }
 .left>span{
     font-size: 2.5em;
@@ -107,6 +107,20 @@
     font-style: italic;
     }
 
+    /* mobile */
 
+    @media (max-width: 700px) {
+      .left>h1{
+        font-size: 15vw;
+        margin-top: 1.5em;
+        
+    }
+    .left>span{
+      font-size: 5vw;
+    }
+    .links{
+      font-size: 6vw;
+    }
+    }
 
 
