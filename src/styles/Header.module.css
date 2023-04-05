@@ -16,9 +16,11 @@
     filter: invert(1);
     margin-right: 12em;
     margin-left: 6em; 
-    margin-top: 1em;
+    margin-top: 1em; 
 }
-
+.innerMonoLogo{
+    display: none;
+}
 .barWrap{
     display: flex;
     width: 90%;
@@ -58,9 +60,61 @@
     display: none;
 }
 
+.op, .cl{
+    width: 4em;
+    height: 4em;
+    position: absolute;
+    top: 2em;
+    left: calc(90vw - 4em );
+    
+    background-size: cover; 
+  }
+  .op{  
+    background-image: url("/close.svg"); 
+    
+    }
+  .cl{
+    background-image: url("/burger-menu.svg"); 
+    }
+    .navBar{
+        width: 100vw;
+        height: 100vh; 
+        position: absolute;
+        top: -2em;
+        right:-6em;
+    }
+    .wrapBar{
+        width: 100vw;
+        height: 100vh;
+        background:linear-gradient(180deg, rgb(177, 177, 177) 40%, rgba(70, 70, 70, 0.12) 100%);
+        position: absolute;
+    }
+    .wrapBar{
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(44, 147, 147);
+        top: 0;
+        left: 0;
+        padding-top: 1.5em;
+        padding-left: 3em;
+    }
+    .op, .cl{
+        top:2em;
+        width: 2.5em;
+        height: 2.5em;
+        z-index: 10;
+    }  
+
 @media screen and (max-width : 700px) {
-     .barItems, .linkImage, .barWrap{ 
+     .barItems,  .barWrap{ 
         display: none;
+     }
+     .wrapBar{
+        padding-top: 0em;
+        padding-left: 0em;
+     }
+     .monoLogo{
+        margin-top: 4vh;
      }
     .header {
         padding: 0;
@@ -75,15 +129,13 @@
         margin: 0;
         padding: 4em;
         background:linear-gradient(180deg, rgb(0 25 68), rgba(200,200,200 ) 100%);
-     
-     }
-     .monoLogoMobile{
-        margin-top: -2vh;
-        filter: invert(1);
-        display: block;
+      }
+      .head{
+        display: flex;
         position: relative;
-        right: 12vw;
-     }
+        top: auto;
+    }
+     
 
      .buttonMenu{
         display: block;
@@ -97,10 +149,7 @@
         cursor: pointer; 
         z-index: 2;
      }
-     .buttonMenu:hover{
-        transform: rotate(-10deg);
-        transition: 1s;
-     }
+     
      .barItemsMobile{
         display:block ;
         position:relative;
@@ -113,4 +162,7 @@
         list-style: none;  
 
     }
+
+
 }
+  
