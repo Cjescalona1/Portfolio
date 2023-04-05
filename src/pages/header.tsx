@@ -23,6 +23,9 @@ const Header = () => {
                     target='_self'
                     rel="noopener noreferrer"
                     className={styles.linkImage}
+                    onClick={()=>{
+                        setOpenMenu(!openMenu)
+                    }}
             >
                 <Image
                     src="/croped-CJ-monogram.png"
