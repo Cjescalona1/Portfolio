@@ -15,7 +15,7 @@
 .monoLogo{
     filter: invert(1);
     margin-right: 12em;
-    margin-left: 6em; 
+    margin-left: 3em; 
     margin-top: 1em; 
 }
 .innerMonoLogo{
@@ -65,7 +65,7 @@
     height: 4em;
     position: absolute;
     top: 2em;
-    left: calc(90vw - 4em );
+    left: calc(90vw - 3em );
     
     background-size: cover; 
   }
