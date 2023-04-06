@@ -25,6 +25,26 @@ const Carousel = () => {
                 </ul>
 
             </div>
+            <div>
+                <ul className={styles.carouselWrapperMobile}>
+                    {carouselElements.map((item, index) => {
+                        return (
+                            <li className={styles.itemCarousel} key={item.name} >
+                                <article className={styles.slider}>
+                                    <figure >
+                                        <Image id={"id" + index} src={`/${item.name}`} alt={item.name} height={280} width={320} />
+                                    </figure>
+                                    <figcaption className={styles.auxMar}>
+                                        {item.description}
+                                    </figcaption>
+                                </article>
+                            </li>
+                        )
+                    })
+                    }
+                </ul>
+
+            </div>
 
         </>
     )
