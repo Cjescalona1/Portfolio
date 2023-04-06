@@ -184,10 +184,12 @@
 
 @media screen and (max-width: 500px) {
   .parentMobile{
-    transform: scale(0.8); 
-    left: -4em !important;
-
+    transform: scale(0.7);
+    left: -10vw !important;
+    top: -16vh !important;
+ 
   }
+ 
 }
 @media screen and (max-width: 800px) {
   .parent,
@@ -220,7 +222,6 @@
   }
   .wrapper{
     height: 120vh !important;
-
   }
 }
 
