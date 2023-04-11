@@ -44,7 +44,7 @@ const Home = ()=>{
 				</div>
 			</div>
 			<a className={styles.buttonScroll} onClick={()=>{handleClick("ExE");}}>
-				<div className={styles.scroll} > <p> v </p> </div>    
+				<div className={styles.scroll} ><p>v </p> </div>    
 			</a>
 		</section>
         </>
