@@ -298,3 +298,14 @@
 
   }
 }
+@media screen and (max-height: 700px){
+.parentMobile{
+    transform: scale(0.6);
+    left: -10vw !important;
+    top: -36vh !important;
+}
+.Tstack{
+  top: -1.5em;
+  left: 8vw;  
+}
+}

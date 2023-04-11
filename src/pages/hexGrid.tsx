@@ -1,10 +1,13 @@
 import styles from '@/styles/ExE.module.css';
 import Image from 'next/image'; 
+import localFont from 'next/font/local'
+
+const myFont = localFont({ src: './GallientRegular.ttf'})
 const Grid = ()=>{
 
 	return(
 		<>
-		<div className={styles.Tstack} >Tech Stack</div>
+		<div className={styles.Tstack}> <p className={myFont.className}>Tech Stack</p></div>
 			<div className={styles.parent}>
 				
 				<div className={styles.div1}> 
