@@ -1,31 +1,29 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-import Header from './header'  
-import ExE from './exe'
-import Contact from './contact'
-import About from './about' 
-import Home from './home'
-const inter = Inter({ subsets: ['latin'] })
+import React  from 'react';
+import Head from 'next/head';  
+import styles from '@/styles/Home.module.css';
+import Header from './header';  
+import ExE from './exe';
+import Contact from './contact';
+import About from './about'; 
+import Home from './home'; 
 
 export default function Index() {
-  return (
-    <>
-      <Head>
-        <title>Cjescalona1 - Developer</title>
-        <meta name="description" content="Clean Portfolio Cjescalona1" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.png" />
-      </Head>
-      <main className={styles.main} id='Top'>
-        <Header />
-        <Home/>
-        <ExE/>
-        <About/>
-        <Contact/>
+	return (
+		<>
+			<Head>
+				<title>Cjescalona1 - Developer</title>
+				<meta name="description" content="Clean Portfolio Cjescalona1" />
+				<meta name="viewport" content="width=device-width, initial-scale=1" />
+				<link rel="icon" href="/favicon.png" />
+			</Head>
+			<main className={styles.main} id='Top'>
+				<Header />
+				<Home/>
+				<ExE/>
+				<About/>
+				<Contact/>
         
-{/*         
+				{/*         
         <div className={styles.description}>
           <p>
             Get started by editing&nbsp;
@@ -129,7 +127,7 @@ export default function Index() {
           </a>
         </div>
 */}
-      </main>
-    </>
-  )
+			</main>
+		</>
+	);
 }
