@@ -4,7 +4,9 @@ const Grid = ()=>{
 
 	return(
 		<>
+		<div className={styles.Tstack} >Tech Stack</div>
 			<div className={styles.parent}>
+				
 				<div className={styles.div1}> 
 					<Image src={'/HTML5_logo_and_wordmark.svg'} alt="HTML" width={80} height={90}/>   
 				</div>
@@ -27,7 +29,9 @@ const Grid = ()=>{
 					<Image src="/express.svg" alt="ExpressJs" width={80} height={90}/>
 				</div>
 			</div>
+			 
 			<div className={styles.parentMobile}>
+
 				<div className={styles.div1}> 
 					<Image src={'/HTML5_logo_and_wordmark.svg'} alt="HTML" width={70} height={90}/>   
 				</div>

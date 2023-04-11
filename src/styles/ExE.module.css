@@ -178,54 +178,29 @@
 }
 
 .parentMobile,
-.carouselWrapperMobile {
+.carouselWrapperMobile,
+.mobileTitle {
   display: none;
 }
 
-@media screen and (max-width: 500px) {
-  .parentMobile{
-    transform: scale(0.7);
-    left: -10vw !important;
-    top: -16vh !important;
- 
-  }
- 
-}
-@media screen and (max-width: 800px) {
-  .parent,
-  .carouselWrapper {
-    display: none;
-  }
-  .parentMobile{ 
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 12px;
-    grid-row-gap: 12px; 
-    position: relative; 
-    left: -3em;
-    top: 2em;
-    margin-left: calc(15vw - 3em);
-  }
-
-  .parentMobile>* {
-    background-color: hsla(0, 0%, 96%, 0.551); 
-    padding: 1.5em;
-  }
-
-  .carouselWrapperMobile {
-    display: flex;
-  }
-  .itemCarousel {
-    animation: scroll 30s linear infinite;
-    width: calc(40vw * 8);
-  }
-  .wrapper{
-    height: 120vh !important;
-  }
+.Tstack {
+  font-size: 2.5em;
+  font-weight: bolder;
+  position: relative;
+  top: 2em;
+  left: -4em;
+  transform: perspective(600px) rotateX(30deg)rotateY(340deg);
 }
 
 @media screen and (max-width: 1200px) {
+  .Tstack {
+    font-size: 2.5em;
+    position: relative;
+    left: 7.5em;
+    top: 1em;
+    transform: none;
+    font-weight: normal;
+  }
 
   .wrapper {
     display: block;
@@ -249,4 +224,77 @@
     width: 100vw;
   }
 
+}
+
+@media screen and (max-width: 800px) {
+
+  .parent,
+  .carouselWrapper,
+  .fullSize {
+    display: none;
+  }
+
+  .parentMobile {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 12px;
+    grid-row-gap: 12px;
+    position: relative;
+    left: -3em;
+    top: 2em;
+    margin-left: calc(15vw - 3em);
+  }
+
+  .parentMobile>* {
+    background-color: hsla(0, 0%, 96%, 0.551);
+    padding: 1.5em;
+  }
+
+  .carouselWrapperMobile {
+    display: flex;
+  }
+
+  .itemCarousel {
+    animation: scroll 30s linear infinite;
+    width: calc(40vw * 8);
+  }
+
+  .wrapper {
+    height: 120vh !important;
+  }
+
+  .Tstack {
+    font-size: 2.5em;
+    position: relative;
+    left: 1em;
+    top: -1em;
+    width: max-content;
+    margin: 1em 0 -1em 10vw;
+    transform: none;
+    font-weight: normal;
+
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .parentMobile {
+    transform: scale(0.7);
+    left: -10vw !important;
+    top: -16vh !important;
+
+  }
+
+  .Tstack {
+    font-size: 2.5em;
+    position: relative;
+    left: 1em;
+    top: -1em;
+    width: max-content;
+    margin: 1em auto;
+    transform: none;
+    font-weight: normal;
+
+  }
 }
