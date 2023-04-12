@@ -1,8 +1,10 @@
 import styles from '@/styles/Header.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
+
 import { useState } from 'react';
 import Logo from './components/Logo';
+import Social from './components/Social';
 
 
 const Header = () => {
@@ -36,6 +38,10 @@ const Header = () => {
 						height={45}
 						priority
 					/>
+					<div className={openMenu?styles.WrapperMenu:styles.wrapBarClose}>
+						 
+						 <Social  open = {openMenu}></Social>
+					</div>
 				</Link>
 
 				

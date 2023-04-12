@@ -104,6 +104,26 @@
         height: 2.5em;
         z-index: 10;
     }  
+  
+
+    .socialList{
+        position: absolute;
+        bottom: 8vh;
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: inherit;
+        align-content: center;
+        margin: 0 16vw;
+        max-width: 800px;
+    }
+    
+    .socialList>li{
+        margin: 0 5vw;
+        filter: invert(1);
+    }
+    
+    .hide{display: none;}
 
 @media screen and (max-width : 700px) {
      .barItems,  .barWrap{ 
@@ -162,7 +182,14 @@
         list-style: none;  
 
     }
-
+    .socialList{
+        margin: 0 6vw;
+    }
 
 }
-  
+@media screen and (max-width:500px) {
+    .socialList{
+        margin: 0;
+    }
+
+}
