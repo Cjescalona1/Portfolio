@@ -54,7 +54,7 @@
   margin: auto;
   overflow: hidden;
   position: relative;
-  width: 40vw;
+  width: 40vw; 
 }
 
 .carouselWrapper::before,
@@ -175,6 +175,9 @@
 
 .auxMar {
   margin: 1.5em auto;
+  font-weight: bolder;
+  letter-spacing: 4px;
+  text-shadow: 2px 2px gray;
 }
 
 .parentMobile,

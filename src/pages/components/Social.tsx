@@ -13,8 +13,7 @@ const Social = (props:any)=>{
      
         <ul className={localStyle ? styles.socialList : styles.hide }>
         {socialIcons.map((item)=>{        
-        return(
-    
+        return( 
             <li key={item.src} > 
                 <Image src={`${item.src}-icon.svg`} alt="item" width={55} height={55}  onClick={()=>{goto(item.link )}}/>            
             </li>

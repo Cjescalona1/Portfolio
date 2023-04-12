@@ -5,18 +5,19 @@ import Link from 'next/link';
 import { useState } from 'react';
 import Logo from './components/Logo';
 import Social from './components/Social';
+import localFont from 'next/font/local'
 
+const myFont = localFont({ src: './GallientRegular.ttf'})
 
 const Header = () => {
 	const handleClick = (val: string) => {
-
+		setOpenMenu(!openMenu)
 		document.getElementById(val)?.scrollIntoView({ behavior: 'smooth' });
 	};
 	const [openMenu, setOpenMenu] = useState(false);
 
 	return (
-		<header className={styles.header}>
-         
+		<header className={styles.header}> 
 			<Logo></Logo>
 			<div className={openMenu? styles.op : styles.cl} onClick={() => { setOpenMenu(!openMenu);}} >
 				 
@@ -38,13 +39,38 @@ const Header = () => {
 						height={45}
 						priority
 					/>
-					<div className={openMenu?styles.WrapperMenu:styles.wrapBarClose}>
-						 
-						 <Social  open = {openMenu}></Social>
-					</div>
+					
 				</Link>
 
-				
+					<div className={openMenu?styles.WrapperMenu:styles.wrapBarClose}> 
+						<div className={styles.linksWrap}>
+
+						<ul className={openMenu?styles.linksOnMenu:styles.hide}>
+							<li>
+								<a  onClick={()=>{handleClick("Top");}}>
+									HOME  
+								</a>
+							</li>
+							<li>
+								<a  onClick={()=>{handleClick("ExE");}}>
+									EXPERIENCE & EXPERTICE  
+								</a>
+							</li>
+							<li>
+								<a  onClick={()=>{handleClick("About");}}>
+									ABOUT ME
+								</a>
+							</li>
+							<li>
+								<a  onClick={()=>{handleClick("Contact");}}>
+									CONTACT
+								</a>
+							</li>
+						</ul>
+						</div>
+
+						<Social  open = {openMenu}></Social>
+					</div>
 			</div>
 
 		</header>

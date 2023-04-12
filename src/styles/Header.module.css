@@ -68,6 +68,7 @@
     left: calc(90vw - 3em );
     
     background-size: cover; 
+    cursor:crosshair;
   }
   .op{  
     background-image: url("/close.svg"); 
@@ -121,9 +122,25 @@
     .socialList>li{
         margin: 0 5vw;
         filter: invert(1);
+        cursor: progress;
     }
     
     .hide{display: none;}
+ 
+
+    .linksOnMenu{
+        font-size: 6.5vw;
+        list-style: none;
+        cursor:pointer;
+        font-weight: bolder;
+    }
+    .linksOnMenu>li{
+        margin: 1vh 0;
+    }
+    .linksWrap{
+    padding: 5vw;
+    text-align: end;
+    }
 
 @media screen and (max-width : 700px) {
      .barItems,  .barWrap{ 
@@ -185,6 +202,14 @@
     .socialList{
         margin: 0 6vw;
     }
+
+    .linksOnMenu{
+        font-size: 50px;
+        list-style: none;
+        cursor: pointer;
+        margin: 1em 0;
+    }
+    
 
 }
 @media screen and (max-width:500px) {
