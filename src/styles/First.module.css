@@ -94,8 +94,10 @@
     list-style: none;
     position: absolute;
     bottom: 1.8em;
-    right: 1em;
+    right: 3.5em;
     text-align: end;
+
+  
   }
   .links>li:hover{ 
     cursor: pointer;
