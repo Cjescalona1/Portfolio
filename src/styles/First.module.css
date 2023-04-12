@@ -95,8 +95,7 @@
     position: absolute;
     bottom: 1.8em;
     right: 3.5em;
-    text-align: end;
-
+    text-align: end;  
   
   }
   .links>li:hover{ 
@@ -127,6 +126,7 @@
     }
     .links{
       font-size: 6vw;
+      right: 1.5em;
     }
     }
 
