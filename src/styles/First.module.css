@@ -112,7 +112,7 @@
 .links>li:hover {
   cursor: pointer;
   transform: translateX(-35px);
-  transition: all 1s;
+  transition:   1s ease-in-out;
 }
 
 .links>li>a:hover {

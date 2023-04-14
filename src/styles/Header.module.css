@@ -124,6 +124,21 @@
         filter: invert(1);
         cursor: crosshair;
     }
+
+    .socialListContact{
+        position: relative;
+        display: flex;
+        list-style: none;
+        height: 1em;
+        top: 77vh;
+        right: -5vw;
+    }
+    
+    .socialListContact>li{
+        margin: 0 1em;
+        filter: invert(1);
+        cursor: crosshair;
+    }
     
     .hide{display: none;}
  
@@ -224,6 +239,22 @@
 
     }
     
+    .socialListContact{
+        position: relative;
+        display: flex;
+        list-style: none;
+        height: 1em;
+        top: 70vh;
+        right: 12vw;
+    }
+    
+    .socialListContact>li{
+        margin: 0;
+        filter: invert(1);
+        cursor: crosshair;
+        transform: scale(0.8);
+        height: 1em;
+    }
 
 }
 @media screen and (max-width:500px) {
