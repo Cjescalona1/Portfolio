@@ -3,7 +3,7 @@
   height: 100vh;
   width: 100vw;
   background-repeat: no-repeat;
-  background-size:100% 100%;
+  background-size:cover;
   margin: 0;
   background-image: url(/expandedCoffeCup.jpg);
   box-shadow: inset 0 100px 250px 120px #000a1e;
@@ -80,8 +80,7 @@
   position: relative;
   top: 34vh;
   left: 15vw;
-  font-size: 4vw;
-  text-shadow: 2px 2px #40281c;
+  font-size: 4vw; 
   width: 70%;
 }
 .message>p{

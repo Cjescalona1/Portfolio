@@ -130,12 +130,14 @@
 
   .left>h1 {
     font-size: 15vw;
-    margin-top: 1.2em;
+    margin-top: 4em;
+    margin-left: 7px;
 
   }
 
   .left>span {
     font-size: 5vw;
+    margin-left: 7px;
   }
 
   .links {

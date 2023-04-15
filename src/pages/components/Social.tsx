@@ -33,7 +33,7 @@ export const SocialContact = () => {
             {socialIcons.map((item) => {
                 return (
                     <li key={item.src} >
-                        <Image src={`${item.src}-icon.svg`} alt="item" width={80} height={80} onClick={() => { goto(item.link) }} />
+                        <Image src={`${item.src}-icon.svg`} alt="item" width={75} height={75} onClick={() => { goto(item.link) }} />
                     </li>
                 )
             })}
