@@ -1,8 +1,13 @@
 import styles from '@/styles/About.module.css';
+import { useState } from 'react';
+
+
 
 const About = ()=>{
+ 
+
 	return(
-		<section id="About" className={styles.wrapper}>
+		<section id="About" className={styles.wrapper} >
 			<div className={styles.expDesc1}>
 			I’m an  <b>Software Developer</b> with passion for the creativity and the better user experience,
 			</div>

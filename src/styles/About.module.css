@@ -28,5 +28,26 @@
 
 .expDesc2{
   text-align: start;
+}
 
+.hide{ display: none;}
+
+@media screen and (min-width: 800px) {
+  .wrapper{
+    padding: 0;
+  }
+
+  .wrapper>*{
+    font-size: clamp(1.5rem, 10vw, 3rem);
+    margin-top: clamp(1rem, 10vw, 5rem);
+    width: 60vw;
+  }
+  .expDesc1 , .expDesc3{
+    position: relative;
+    left: 10em;
+  }
+  .expDesc2{
+    
+    margin-left: 2em;
+  }
 }
