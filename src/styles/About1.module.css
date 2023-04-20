@@ -1,0 +1,60 @@
+ 
+.wrapper {
+  height: 100vh;
+  width: 100vw; 
+  margin: 0;
+  background-image: url(/about-bg.jpeg);
+  box-shadow: inset 0 100px 250px 120px #000a1e;
+  padding: 0 2em;
+  display: flex;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 6em;
+  flex-direction: column;
+}
+.wrapper>*{
+  font-size: 1.3em;
+  margin-top: 3em;
+}
+.wrapper>*>b{
+  font-size: 1.2em;
+}
+
+.expDesc1 , .expDesc3{
+  text-align: end;
+}
+
+.expDesc2{
+  text-align: start;
+}
+
+.hide{ display: none;}
+
+@media screen and (max-width:700px){
+  .wrapper{
+    padding-top:40vh;
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .wrapper{
+    padding: 0;
+  }
+
+  .wrapper>*{
+    font-size: clamp(1.5rem, 10vw, 3rem);
+    margin-top: clamp(1rem, 10vw, 5rem);
+    width: 60vw;
+  }
+  .expDesc1 , .expDesc3{
+    position: relative;
+    left: 10em;
+  }
+  .expDesc2{
+    
+    margin-left: 2em;
+  }
+}
