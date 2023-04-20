@@ -1,60 +1,231 @@
- 
+/**
+ * ------------------------------------------
+ *  Responsive Grid Media Queries - 1280, 1024, 768, 480
+ *   1280-1024   - desktop (default grid)
+ *   1024-768    - tablet landscape
+ *   768-480     - tablet 
+ *   480-less    - phone landscape & smaller
+ * --------------------------------------------
+ */
+
+ @media all and (min-width:1280px){
+
+    .wrapper {
+        height: 100vh;
+        width: 100vw; 
+        margin: 0;
+        background-image: url(/about-bg.jpeg);
+        box-shadow: inset 0 100px 250px 120px #000a1e;
+        padding: 3em 6em;
+        display: flex;
+        background-attachment: fixed; 
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-direction: column;
+      }
+      .wrapper>*{
+        font-size: 2.5em;
+        margin-top: 3.5em;
+        color: aliceblue;
+        line-height: 1.5;
+      }
+      .wrapper>*>b{
+        color: white;
+        font-size: 1.3em;
+        text-shadow: 2px 2px rgb(111 202 239 / 72%);
+      }
+    
+    .expDesc1 , .expDesc3{
+        text-align: end;
+      }
+      
+      .expDesc2{
+        text-align: start;
+      }
+    
+
+ }
+
+ @media all and (min-width: 1024px) and (max-width: 1280px) {
+
 .wrapper {
-  height: 100vh;
-  width: 100vw; 
-  margin: 0;
-  background-image: url(/about-bg.jpeg);
-  box-shadow: inset 0 100px 250px 120px #000a1e;
-  padding: 0 2em;
-  display: flex;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 6em;
-  flex-direction: column;
-}
-.wrapper>*{
-  font-size: 1.3em;
-  margin-top: 3em;
-}
-.wrapper>*>b{
-  font-size: 1.2em;
-}
+    height: 100vh;
+    width: 100vw; 
+    margin: 0;
+    background-image: url(/about-bg.jpeg);
+    box-shadow: inset 0 100px 250px 120px #000a1e;
+    padding: 1.5em 5em;
+    display: flex;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+  }
+  .wrapper>*{
+    font-size: 2em;
+    margin-top: 5em;
+    color: aliceblue;
+    line-height: 1.5;
+  }
+  .wrapper>*>b{
+    color: white;
+    font-size: 1.3em;
+    text-shadow: 2px 2px rgb(111 202 239 / 72%);
+  }
 
 .expDesc1 , .expDesc3{
-  text-align: end;
-}
-
-.expDesc2{
-  text-align: start;
-}
-
-.hide{ display: none;}
-
-@media screen and (max-width:700px){
-  .wrapper{
-    padding-top:40vh;
-    font-size: 0.8em;
+    text-align: end;
   }
-}
-
-@media screen and (min-width: 800px) {
-  .wrapper{
-    padding: 0;
-  }
-
-  .wrapper>*{
-    font-size: clamp(1.5rem, 10vw, 3rem);
-    margin-top: clamp(1rem, 10vw, 5rem);
-    width: 60vw;
-  }
-  .expDesc1 , .expDesc3{
-    position: relative;
-    left: 10em;
-  }
+  
   .expDesc2{
-    
-    margin-left: 2em;
+    text-align: start;
   }
-}
+
+
+  }
+
+ @media all and (min-width: 768px) and (max-width: 1024px) {
+.wrapper {
+    height: 100vh;
+    width: 100vw; 
+    margin: 0;
+    background-image: url(/about-bg.jpeg);
+    box-shadow: inset 0 100px 250px 120px #000a1e;
+    padding: 1.5em 4.5em;
+    display: flex;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+  }
+  .wrapper>*{
+    font-size: 2em;
+    margin-top: 5em;
+    color: aliceblue;
+    line-height: 1.5;
+  }
+  .wrapper>*>b{
+    color: white;
+    font-size: 1.3em;
+    text-shadow: 2px 2px rgb(111 202 239 / 72%);
+  }
+
+.expDesc1 , .expDesc3{
+    text-align: end;
+  }
+  
+  .expDesc2{
+    text-align: start;
+  }
+
+
+  }
+ 
+ @media all and (min-width: 480px) and (max-width: 768px) {
+
+.wrapper {
+    height: 100vh;
+    width: 100vw; 
+    margin: 0;
+    background-image: url(/about-bg.jpeg);
+    box-shadow: inset 0 100px 250px 120px #000a1e;
+    padding: 1.5em 4.5em;
+    display: flex;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+  }
+  .wrapper>*{
+    font-size: 2em;
+    margin-top: 3.5em;
+    color: aliceblue;
+    line-height: 1.5;
+  }
+  .wrapper>*>b{
+    color: white;
+    font-size: 1.3em;
+    text-shadow: 2px 2px rgb(111 202 239 / 72%);
+  }
+
+.expDesc1 , .expDesc3{
+    text-align: end;
+  }
+  
+  .expDesc2{
+    text-align: start;
+  }
+
+  }
+ 
+ @media all and (max-width: 480px) { 
+     
+.wrapper {
+    height: 100vh;
+    width: 100vw; 
+    margin: 0;
+    background-image: url(/about-bg.jpeg);
+    box-shadow: inset 0 100px 250px 120px #000a1e;
+    padding: 1.5em 2em;
+    display: flex;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+  }
+  .wrapper>*{
+    font-size: 1.2em;
+    margin-top: 3.5em;
+    color: aliceblue;
+    line-height: 1.5;
+  }
+  .wrapper>*>b{
+    color: white;
+    font-size: 1.3em;
+    text-shadow: 2px 2px rgb(111 202 239 / 72%);
+  }
+
+.expDesc1 , .expDesc3{
+    text-align: end;
+  }
+  
+  .expDesc2{
+    text-align: start;
+  }
+ }
+ 
+ 
+ /* Portrait */
+ @media screen and (orientation:portrait) { /* Portrait styles here */ }
+ /* Landscape */
+ @media screen and (orientation:landscape) { /* Landscape styles here */ }
+ 
+ 
+ /* CSS for iPhone, iPad, and Retina Displays */
+ 
+ /* Non-Retina */
+ @media screen and (-webkit-max-device-pixel-ratio: 1) {
+ }
+ 
+ /* Retina */
+ @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+ only screen and (-o-min-device-pixel-ratio: 3/2),
+ only screen and (min--moz-device-pixel-ratio: 1.5),
+ only screen and (min-device-pixel-ratio: 1.5) {
+ }
+ 
+ /* iPhone Portrait */
+ @media screen and (max-device-width: 480px) and (orientation:portrait) {
+ } 
+ 
+ /* iPhone Landscape */
+ @media screen and (max-device-width: 480px) and (orientation:landscape) {
+ }
+ 
+ /* iPad Portrait */
+ @media screen and (min-device-width: 481px) and (orientation:portrait) {
+ }
+ 
+ /* iPad Landscape */
+ @media screen and (min-device-width: 481px) and (orientation:landscape) {
+ }
