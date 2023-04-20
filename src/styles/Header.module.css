@@ -71,12 +71,30 @@
     cursor:crosshair;
   }
   .op{  
-    background-image: url("/close.svg"); 
-    
+    background: url("/close.svg"); 
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    /* put the height and width of your image here */
+    height: 50px;
+    width: 200px;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
     }
   .cl{
-    background-image: url("/burger-menu.svg"); 
+    background: url("/burger-menu.svg"); 
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    /* put the height and width of your image here */
+    height: 50px;
+    width: 200px;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;    
     }
+
     .navBar{
         width: 100vw;
         height: 100vh; 

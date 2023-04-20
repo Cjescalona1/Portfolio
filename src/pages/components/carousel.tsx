@@ -2,7 +2,7 @@ import styles from '@/styles/ExE.module.css';
 import Image from 'next/image';
 import localFont from 'next/font/local'
 
-const myFont = localFont({ src: './GallientRegular.ttf'})
+const myFont = localFont({ src: '../GallientRegular.ttf'})
 
 const carouselElements: any[] = [{ 'description': 'Multiporpose NFT related page', 'name': 'car1.jpeg' }, { 'description': 'Components integration on E-commerce', 'name': 'car2.svg' }, { 'description': 'NFT generative collection', 'name': 'car3.jpeg' }, { 'description': 'Mint site for lootboxes related to NFT collection', 'name': 'car4.png' }, { 'description': 'Mint site for NFTs', 'name': 'car5.png' }, { 'description': 'NFT related staking game', 'name': 'car6.png' }, { 'description': 'Cybermetric, Data collection tool', 'name': 'car7.png' }];
 
@@ -29,7 +29,6 @@ const Carousel = () => {
 					})
 					}
 				</ul>
-
 			</div>
 			<div>
 				<ul className={styles.carouselWrapperMobile}>
