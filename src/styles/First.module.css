@@ -1,138 +1,501 @@
-.wrapper {
-  width: 100vw;
-  height: 100vh;
-  padding: 5em 6em;
-  display: flex;
-  /* background-color: rgba(0, 0, 0, 0.228); */
-  /* background:linear-gradient(180deg, rgb(116, 116, 116) 0%, rgba(200, 200, 200, 0.100) 100%); */
-  background-image: url('/firstBG.jpeg');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  margin-top: 0em;
-  box-shadow: inset 0 -25px 130px 100px rgb(0 25 68);
+/**
+ * ------------------------------------------
+ *  Responsive Grid Media Queries - 1280, 1024, 768, 480
+ *   1280-1024   - desktop (default grid)
+ *   1024-768    - tablet landscape
+ *   768-480     - tablet 
+ *   480-less    - phone landscape & smaller
+ * --------------------------------------------
+ */
 
-}
+ @media all and (min-width:1280px){
+    .left {
+        position: relative;
+        right: 0;  
+        width: 45vw;
+        text-align: left;
+        background-color: transparent;
+        }
+      
+      .left>h1 {
+        font-size: 9vw;
+        margin-top: 5vw;
+        margin-left: 0.5em;
+        text-shadow: rgba(247, 247, 247, 0.49) -5px 5px 20px;
+        font-weight: 500;
+      }
+    
+      .left>span {
+        font-size: 3vw;
+        margin-left: 1.5em;
+      }
+    
+      .links {
+        font-size: 3.5vw;
+      }
+      
+    
+      .rigth {
+        width: 45vw;
+        background-color: transparent;
+      
+      }
+      .buttonScroll {
+        cursor: pointer;
+      }
+      
+      .scroll {
+        background-color: rgba(40, 39, 39, 0.573);
+        position: absolute;
+        bottom: 2.5em;
+        left: 45%;
+        border-radius: 24px;
+        height: 2.5em;
+        width: 2.5em;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .scroll>p {
+        color: rgba(240, 255, 255, 0.50);
+        margin-top: 0.5em;
+        transform: rotate(90deg);
+        font-size: larger;
+        font-weight: bolder;
+        animation: infinite;
+        -webkit-animation: scale-up-ver-top 1.2s ease-out both infinite;
+        animation: scale-up-ver-top 1.2s ease-out both infinite;
+      }
+      
+    
+    @-webkit-keyframes scale-up-ver-top {
+        0% {
+          -webkit-transform: scaleY(0.4);
+          transform: scaleY(0.4);
+          -webkit-transform-origin: 100% 0%;
+          transform-origin: 100% 0%;
+        }
+      
+        100% {
+          -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+          -webkit-transform-origin: 100% 0%;
+          transform-origin: 100% 0%;
+        }
+      }
+      
+      @keyframes scale-up-ver-top {
+        0% {
+          -webkit-transform: scaleY(0.4);
+          transform: scaleY(0.4);
+          -webkit-transform-origin: 100% 0%;
+          transform-origin: 100% 0%;
+        }
+      
+        100% {
+          -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+          -webkit-transform-origin: 100% 0%;
+          transform-origin: 100% 0%;
+        }
+      }
+      
+      .links {
+        list-style: none;
+        position: absolute;
+        bottom: 1.8em;
+        right: 1.5em;
+        text-align: end;
+      
+      }
+      
+      .links>li:hover {
+        cursor: pointer;
+        transform: translateX(-35px);
+        transition:   1s ease-in-out;
+      }
+      
+      .links>li>a:hover {
+        cursor: pointer;
+        font-style: italic;
+      }
+      
 
-.left {
-  width: 45vw;
-  text-align: left;
-  background-color: transparent;
-}
 
-.left>h1 {
-  font-size: 11em;
-  text-shadow: rgba(247, 247, 247, 0.49) -5px 5px 20px;
-  font-weight: 500;
-  line-height: 1;
-  margin-top: 0.5em;
-}
+ }
 
-.left>span {
-  font-size: 2.5em;
-}
+ @media all and (min-width: 1024px) and (max-width: 1280px) {
+    .left {
+        position: relative;
+        right: 0;  
+        width: 45vw;
+        text-align: left;
+        background-color: transparent;
+        }
+      
+      .left>h1 {
+        font-size: 11vw;
+        margin-top: 20vw;
+        margin-left: 0.5em;
+    
+        text-shadow: rgba(247, 247, 247, 0.49) -5px 5px 20px;
+        font-weight: 500;
+      }
+    
+      .left>span {
+        font-size: 4vw;
+        margin-left: 1.5em;
+      }
+    
+      .links {
+        font-size: 4.5vw;
+        right: 1.5em;
+      }
+      
+    
+      .rigth {
+        width: 45vw;
+        background-color: transparent;
+      
+      }
+      .buttonScroll {
+        cursor: pointer;
+      }
+      
+      .scroll {
+        background-color: rgba(40, 39, 39, 0.573);
+        position: absolute;
+        bottom: 2.5em;
+        left: 45%;
+        border-radius: 24px;
+        height: 2.5em;
+        width: 2.5em;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .scroll>p {
+        color: rgba(240, 255, 255, 0.50);
+        margin-top: 0.5em;
+        transform: rotate(90deg);
+        font-size: larger;
+        font-weight: bolder;
+        animation: infinite;
+        -webkit-animation: scale-up-ver-top 1.2s ease-out both infinite;
+        animation: scale-up-ver-top 1.2s ease-out both infinite;
+      }
+      
+    
+    @-webkit-keyframes scale-up-ver-top {
+        0% {
+          -webkit-transform: scaleY(0.4);
+          transform: scaleY(0.4);
+          -webkit-transform-origin: 100% 0%;
+          transform-origin: 100% 0%;
+        }
+      
+        100% {
+          -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+          -webkit-transform-origin: 100% 0%;
+          transform-origin: 100% 0%;
+        }
+      }
+      
+      @keyframes scale-up-ver-top {
+        0% {
+          -webkit-transform: scaleY(0.4);
+          transform: scaleY(0.4);
+          -webkit-transform-origin: 100% 0%;
+          transform-origin: 100% 0%;
+        }
+      
+        100% {
+          -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+          -webkit-transform-origin: 100% 0%;
+          transform-origin: 100% 0%;
+        }
+      }
+      
+      .links {
+        list-style: none;
+        position: absolute;
+        bottom: 1.8em;
+        right: 1.5em;
+        text-align: end;
+      
+      }
+      
+      .links>li:hover {
+        cursor: pointer;
+        transform: translateX(-35px);
+        transition:   1s ease-in-out;
+      }
+      
+      .links>li>a:hover {
+        cursor: pointer;
+        font-style: italic;
+      }
+      
 
-.rigth {
-  width: 45vw;
-  background-color: transparent;
-
-}
-
-.buttonScroll {
-  cursor: pointer;
-}
-
-.scroll {
-  background-color: rgba(40, 39, 39, 0.573);
-  position: absolute;
-  bottom: 2.5em;
-  left: 45%;
-  border-radius: 24px;
-  height: 2.5em;
-  width: 2.5em;
-  color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.scroll>p {
-  color: rgba(240, 255, 255, 0.50);
-  margin-top: 0.5em;
-  transform: rotate(90deg);
-  font-size: larger;
-  font-weight: bolder;
-  animation: infinite;
-  -webkit-animation: scale-up-ver-top 1.2s ease-out both infinite;
-  animation: scale-up-ver-top 1.2s ease-out both infinite;
-}
-
-
-@-webkit-keyframes scale-up-ver-top {
-  0% {
-    -webkit-transform: scaleY(0.4);
-    transform: scaleY(0.4);
-    -webkit-transform-origin: 100% 0%;
-    transform-origin: 100% 0%;
   }
 
-  100% {
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1);
-    -webkit-transform-origin: 100% 0%;
-    transform-origin: 100% 0%;
+ @media all and (min-width: 768px) and (max-width: 1024px) {
+    .left {
+        position: relative;
+        right: 3em;  
+        width: 45vw;
+        text-align: left;
+        background-color: transparent;
+        }
+      
+      .left>h1 {
+        font-size: 14vw;
+        margin-top: 20vw;
+        margin-left: 0.5em;
+    
+        text-shadow: rgba(247, 247, 247, 0.49) -5px 5px 20px;
+        font-weight: 500;
+      }
+    
+      .left>span {
+        font-size: 4vw;
+        margin-left: 2em;
+      }
+    
+      .links {
+        font-size: 6vw;
+        right: 1.5em;
+      }
+      
+    
+      .rigth {
+        width: 45vw;
+        background-color: transparent;
+      
+      }
+      .buttonScroll {
+        cursor: pointer;
+      }
+      
+      .scroll {
+        background-color: rgba(40, 39, 39, 0.573);
+        position: absolute;
+        bottom: 2.5em;
+        left: 45%;
+        border-radius: 24px;
+        height: 2.5em;
+        width: 2.5em;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .scroll>p {
+        color: rgba(240, 255, 255, 0.50);
+        margin-top: 0.5em;
+        transform: rotate(90deg);
+        font-size: larger;
+        font-weight: bolder;
+        animation: infinite;
+        -webkit-animation: scale-up-ver-top 1.2s ease-out both infinite;
+        animation: scale-up-ver-top 1.2s ease-out both infinite;
+      }
+      
+    
+    @-webkit-keyframes scale-up-ver-top {
+        0% {
+          -webkit-transform: scaleY(0.4);
+          transform: scaleY(0.4);
+          -webkit-transform-origin: 100% 0%;
+          transform-origin: 100% 0%;
+        }
+      
+        100% {
+          -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+          -webkit-transform-origin: 100% 0%;
+          transform-origin: 100% 0%;
+        }
+      }
+      
+      @keyframes scale-up-ver-top {
+        0% {
+          -webkit-transform: scaleY(0.4);
+          transform: scaleY(0.4);
+          -webkit-transform-origin: 100% 0%;
+          transform-origin: 100% 0%;
+        }
+      
+        100% {
+          -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+          -webkit-transform-origin: 100% 0%;
+          transform-origin: 100% 0%;
+        }
+      }
+      
+      .links {
+        list-style: none;
+        position: absolute;
+        bottom: 1.8em;
+        right: 1.5em;
+        text-align: end;
+      
+      }
+      
+      .links>li:hover {
+        cursor: pointer;
+        transform: translateX(-35px);
+        transition:   1s ease-in-out;
+      }
+      
+      .links>li>a:hover {
+        cursor: pointer;
+        font-style: italic;
+      }
+      
+
   }
-}
+ 
+ @media all and (min-width: 480px) and (max-width: 768px) {
 
-@keyframes scale-up-ver-top {
-  0% {
-    -webkit-transform: scaleY(0.4);
-    transform: scaleY(0.4);
-    -webkit-transform-origin: 100% 0%;
-    transform-origin: 100% 0%;
+    .left {
+        position: relative;
+        right: 3em;  
+        width: 45vw;
+        text-align: left;
+        background-color: transparent;
+        }
+      
+      .left>h1 {
+        font-size: 15vw;
+        margin-top: 2em;
+        margin-left: 7px;
+    
+        text-shadow: rgba(247, 247, 247, 0.49) -5px 5px 20px;
+        font-weight: 500;
+      }
+    
+      .left>span {
+        font-size: 5vw;
+        margin-left: 7px;
+      }
+    
+      .links {
+        font-size: 6vw;
+        right: 1.5em;
+      }
+      
+    
+      .rigth {
+        width: 45vw;
+        background-color: transparent;
+      
+      }
+      .buttonScroll {
+        cursor: pointer;
+      }
+      
+      .scroll {
+        background-color: rgba(40, 39, 39, 0.573);
+        position: absolute;
+        bottom: 2.5em;
+        left: 45%;
+        border-radius: 24px;
+        height: 2.5em;
+        width: 2.5em;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .scroll>p {
+        color: rgba(240, 255, 255, 0.50);
+        margin-top: 0.5em;
+        transform: rotate(90deg);
+        font-size: larger;
+        font-weight: bolder;
+        animation: infinite;
+        -webkit-animation: scale-up-ver-top 1.2s ease-out both infinite;
+        animation: scale-up-ver-top 1.2s ease-out both infinite;
+      }
+      
+    
+    @-webkit-keyframes scale-up-ver-top {
+        0% {
+          -webkit-transform: scaleY(0.4);
+          transform: scaleY(0.4);
+          -webkit-transform-origin: 100% 0%;
+          transform-origin: 100% 0%;
+        }
+      
+        100% {
+          -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+          -webkit-transform-origin: 100% 0%;
+          transform-origin: 100% 0%;
+        }
+      }
+      
+      @keyframes scale-up-ver-top {
+        0% {
+          -webkit-transform: scaleY(0.4);
+          transform: scaleY(0.4);
+          -webkit-transform-origin: 100% 0%;
+          transform-origin: 100% 0%;
+        }
+      
+        100% {
+          -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+          -webkit-transform-origin: 100% 0%;
+          transform-origin: 100% 0%;
+        }
+      }
+      
+      .links {
+        list-style: none;
+        position: absolute;
+        bottom: 1.8em;
+        right: 1.5em;
+        text-align: end;
+      
+      }
+      
+      .links>li:hover {
+        cursor: pointer;
+        transform: translateX(-35px);
+        transition:   1s ease-in-out;
+      }
+      
+      .links>li>a:hover {
+        cursor: pointer;
+        font-style: italic;
+      }
+      
   }
+ 
+ @media all and (max-width: 480px) {
 
-  100% {
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1);
-    -webkit-transform-origin: 100% 0%;
-    transform-origin: 100% 0%;
-  }
-}
-
-.links {
-  font-size: 50px;
-  list-style: none;
-  position: absolute;
-  bottom: 1.8em;
-  right: 3.5em;
-  text-align: end;
-
-}
-
-.links>li:hover {
-  cursor: pointer;
-  transform: translateX(-35px);
-  transition:   1s ease-in-out;
-}
-
-.links>li>a:hover {
-  cursor: pointer;
-  font-style: italic;
-}
-
-/* mobile */
-
-@media (max-width: 700px) {
   .left {
     position: relative;
-    right: 3em;
-  }
-
+    right: 3em;  
+    width: 45vw;
+    text-align: left;
+    background-color: transparent;
+    }
+  
   .left>h1 {
     font-size: 15vw;
     margin-top: 4em;
     margin-left: 7px;
 
+    text-shadow: rgba(247, 247, 247, 0.49) -5px 5px 20px;
+    font-weight: 500;
   }
 
   .left>span {
@@ -144,4 +507,143 @@
     font-size: 6vw;
     right: 1.5em;
   }
+  
+
+  .rigth {
+    width: 45vw;
+    background-color: transparent;
+  
+  }
+  .buttonScroll {
+    cursor: pointer;
+  }
+  
+  .scroll {
+    background-color: rgba(40, 39, 39, 0.573);
+    position: absolute;
+    bottom: 2.5em;
+    left: 45%;
+    border-radius: 24px;
+    height: 2.5em;
+    width: 2.5em;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .scroll>p {
+    color: rgba(240, 255, 255, 0.50);
+    margin-top: 0.5em;
+    transform: rotate(90deg);
+    font-size: larger;
+    font-weight: bolder;
+    animation: infinite;
+    -webkit-animation: scale-up-ver-top 1.2s ease-out both infinite;
+    animation: scale-up-ver-top 1.2s ease-out both infinite;
+  }
+  
+
+@-webkit-keyframes scale-up-ver-top {
+    0% {
+      -webkit-transform: scaleY(0.4);
+      transform: scaleY(0.4);
+      -webkit-transform-origin: 100% 0%;
+      transform-origin: 100% 0%;
+    }
+  
+    100% {
+      -webkit-transform: scaleY(1);
+      transform: scaleY(1);
+      -webkit-transform-origin: 100% 0%;
+      transform-origin: 100% 0%;
+    }
+  }
+  
+  @keyframes scale-up-ver-top {
+    0% {
+      -webkit-transform: scaleY(0.4);
+      transform: scaleY(0.4);
+      -webkit-transform-origin: 100% 0%;
+      transform-origin: 100% 0%;
+    }
+  
+    100% {
+      -webkit-transform: scaleY(1);
+      transform: scaleY(1);
+      -webkit-transform-origin: 100% 0%;
+      transform-origin: 100% 0%;
+    }
+  }
+  
+  .links {
+    list-style: none;
+    position: absolute;
+    bottom: 1.8em;
+    right: 1.5em;
+    text-align: end;
+  
+  }
+  
+  .links>li:hover {
+    cursor: pointer;
+    transform: translateX(-35px);
+    transition:   1s ease-in-out;
+  }
+  
+  .links>li>a:hover {
+    cursor: pointer;
+    font-style: italic;
+  }
+  
+    
 }
+ 
+ 
+ /* Portrait */
+ @media screen and (orientation:portrait) { /* Portrait styles here */ }
+ /* Landscape */
+ @media screen and (orientation:landscape) { /* Landscape styles here */ }
+ 
+ 
+ /* CSS for iPhone, iPad, and Retina Displays */
+ 
+ /* Non-Retina */
+ @media screen and (-webkit-max-device-pixel-ratio: 1) {
+ }
+ 
+ /* Retina */
+ @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+ only screen and (-o-min-device-pixel-ratio: 3/2),
+ only screen and (min--moz-device-pixel-ratio: 1.5),
+ only screen and (min-device-pixel-ratio: 1.5) {
+ }
+ 
+ /* iPhone Portrait */
+ @media screen and (max-device-width: 480px) and (orientation:portrait) {
+ } 
+ 
+ /* iPhone Landscape */
+ @media screen and (max-device-width: 480px) and (orientation:landscape) {
+ }
+ 
+ /* iPad Portrait */
+ @media screen and (min-device-width: 481px) and (orientation:portrait) {
+ }
+ 
+ /* iPad Landscape */
+ @media screen and (min-device-width: 481px) and (orientation:landscape) {
+ }
+
+ .wrapper {
+    width: 100vw;
+    height: 100vh;
+    padding: 5em 6em;
+    display: flex;
+    /* background-color: rgba(0, 0, 0, 0.228); */
+    /* background:linear-gradient(180deg, rgb(116, 116, 116) 0%, rgba(200, 200, 200, 0.100) 100%); */
+    background-image: url('/firstBG.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 0em;
+    box-shadow: inset 0 -25px 130px 100px rgb(0 25 68);
+  }

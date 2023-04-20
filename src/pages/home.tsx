@@ -11,7 +11,7 @@ const handleClick = (val:string)=>{
  
 const Home = ()=>{ 
 	return( 
-        <>
+         
 		<section className={styles.wrapper}>
 			<div className={styles.left}> 
 				<h1 className={myFont.className}>
@@ -47,7 +47,7 @@ const Home = ()=>{
 				<div className={styles.scroll} ><p>v </p> </div>    
 			</a>
 		</section>
-        </>
+         
 	);
 };
 
