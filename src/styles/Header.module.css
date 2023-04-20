@@ -64,7 +64,7 @@
     width: 4em;
     height: 4em;
     position: absolute;
-    top: 2em;
+    top: 2.5em;
     left: calc(90vw - 3em );
     
     background-size: cover; 
@@ -118,7 +118,7 @@
         padding-left: 3em;
     }
     .op, .cl{
-        top:2em;
+        top:2.5em;
         width: 2.5em;
         height: 2.5em;
         z-index: 10;
