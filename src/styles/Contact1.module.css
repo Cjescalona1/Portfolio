@@ -1,0 +1,129 @@
+ 
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size:cover;
+  margin: 0;
+  background-image: url(/expandedCoffeCup.jpg);
+  box-shadow: inset 0 100px 250px 120px #000a1e;
+
+  padding: 5em;
+  display: flex;
+}
+ 
+.wrapp{
+  display: flex; 
+  position: relative;
+  top: 26%;
+  left: 15vw;
+  height: 40vh;
+}
+  
+.container{
+  justify-content: center;
+  align-items: center;
+}
+.C, .J
+{
+  color:#fff;
+  letter-spacing:10px;
+  font-size:6em;
+  font-weight:bold; 
+  filter:blur(10px);
+}
+
+.C, .J 
+{
+  animation: smoke 5s forwards ease-in-out infinite;
+}
+
+@keyframes smoke
+{
+  0%
+  {
+    transform:rotate(0deg) translateY(0);
+    opacity:0; 
+  }
+  25%
+  {
+    transform:rotate(30deg) translateY(-180px);
+    opacity:0.75; 
+  }
+  
+  50%
+  {
+    transform:rotate(45deg) translateY(-200px);
+    opacity:0.5; 
+  }
+
+  100%
+  {
+    transform:rotate(0deg) translateY(-90px) translateX(-200px);
+    opacity:0; 
+
+  }
+  
+}
+
+.C
+{
+  animation-delay: 0s;
+}
+
+.J
+{
+  animation-delay: .2s;
+} 
+
+.message{
+  position: relative;
+  top: 34vh;
+  left: 15vw;
+  font-size: 4vw; 
+  width: 70%;
+}
+.message>p{
+  text-align: end;
+}
+ 
+@media screen and (max-width:1000px)
+{
+  .message{
+    position: relative;
+    top: 34vh;
+    left: -44vw;
+    font-size: 4vw;
+    text-shadow: 2px 2px #40281c;
+    width: 70%;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+  
+  .container{
+    position: relative;
+    top: 5%;
+    left: -80vw;
+    transform: scale(0.75);
+  }
+  .message{
+    position: relative;
+    top: 50%;
+    left: -110vw;
+    font-size: 1.5em;
+    font-weight: bold;
+    height: 1em;
+  }
+  .message>p{
+    text-align: justify;
+  }
+  .messageContainer{
+    position: relative;
+    top: 0;
+    margin: 0 2em;
+
+  }
+}
+ 

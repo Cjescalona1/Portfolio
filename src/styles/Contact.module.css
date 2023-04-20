@@ -1,29 +1,372 @@
- 
-.wrapper {
-  height: 100vh;
-  width: 100vw;
-  background-repeat: no-repeat;
-  background-size:cover;
-  margin: 0;
-  background-image: url(/expandedCoffeCup.jpg);
-  box-shadow: inset 0 100px 250px 120px #000a1e;
+/**
+ * ------------------------------------------
+ *  Responsive Grid Media Queries - 1280, 1024, 768, 480
+ *   1280-1024   - desktop (default grid)
+ *   1024-768    - tablet landscape
+ *   768-480     - tablet 
+ *   480-less    - phone landscape & smaller
+ * --------------------------------------------
+ */
 
-  padding: 5em;
-  display: flex;
+@media all and (min-width:1280px){
+
+/* Default  */
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin: 0;
+    background-image: url(/expandedCoffeCup.jpg); 
+    padding: 2em;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
 }
- 
-.wrapp{
-  display: flex; 
-  position: relative;
-  top: 26%;
-  left: 15vw;
-  height: 40vh;
+.messageContainer{ 
+    position: relative;
+    margin-top: 10vh;
+    height: 80vh;
+    width: 90vw;
+    padding: 0vh 1vw ;
 }
-  
+.message{
+    position: relative; 
+    
+    margin: clamp(0vh, 5vh , 7vh) 0 clamp(0vh, 0vh , 10vh) 0;
+}
+.message>p{
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 -25vh 0;
+    padding: 0 1.5em;
+}
 .container{
-  justify-content: center;
-  align-items: center;
+    height: 27vh;
+    margin:0 0 -30vh 0;
 }
+.mail{
+    position: relative;
+    font-size: 3.5em;
+    text-align: center;
+    margin: 0 0 -3em 0;
+    padding: 0;
+    top: 40vh;
+}
+.mail>p{  
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.socialWrapper{
+position:relative;
+top: clamp(-5%, 0%, 5%);
+display: flex;
+justify-content: center;
+height: 0;
+padding: 0.5em;
+right: -15em;
+} 
+.animContainer{
+position: relative;
+right: -50em;
+top: 10em;
+transform: rotate(-5deg); 
+}
+
+}
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+    .wrapper{
+        height: 100vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-size:cover;
+        margin: 0;
+        background-image: url(/expandedCoffeCup.jpg); 
+        padding: 2em;
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+    }
+    .messageContainer{ 
+        position: relative;
+        margin-top: 10vh;
+        height: 80vh;
+        width: 90vw;
+        padding: 0vh 1vw ;
+    }
+    .message{
+        position: relative; 
+        
+        margin: clamp(0vh, 5vh , 7vh) 0 clamp(0vh, 0vh , 10vh) 0;
+    }
+    .message>p{
+        font-size: 3em;
+        font-weight: bold;
+        text-align: center;
+        margin: 0 0 -25vh 0;
+        padding: 0 1.5em;
+    }
+    .container{
+        height: 27vh;
+        margin:0 0 -30vh 0; 
+    }
+    .mail{
+        position: relative;
+        font-size: 2.5em;
+        text-align: center;
+        margin: 0 0 -3em 0;
+        padding: 0;
+        top: 40vh;
+    }
+    .mail>p{  
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+    .socialWrapper{
+    position:relative;
+    top: clamp(-5%, 0%, 5%);
+    display: flex;
+    justify-content: center;
+    height: 0;
+    padding: 0.5em;
+    right: -15em;
+    } 
+    .animContainer{
+    position: relative;
+    right: -50em;
+    top: 10em;
+    transform: rotate(-5deg); 
+
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .wrapper{
+        height: 100vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-size:cover;
+        margin: 0;
+        background-image: url(/expandedCoffeCup.jpg); 
+        padding: 2em;
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+    }
+    .messageContainer{ 
+        position: relative;
+        margin-top: 10vh;
+        height: 80vh;
+        width: 90vw;
+        padding: 0vh 1vw ;
+    }
+    .message{
+        position: relative; 
+        
+        margin: clamp(0vh, 5vh , 7vh) 0 clamp(0vh, 0vh , 10vh) 0;
+    }
+    .message>p{
+        font-size: 3em;
+        font-weight: bold;
+        text-align: center;
+        margin: 0 0 -25vh 0;
+        padding: 0 1.5em;
+    }
+    .container{
+        height: 27vh;
+        margin:0 0 -30vh 0;
+    }
+    .mail{
+        position: relative;
+        font-size: 2.5em;
+        text-align: center;
+        margin: 0 0 -3em 0;
+        padding: 0;
+        top: 40vh;
+    }
+    .mail>p{  
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+    .socialWrapper{
+    position:relative;
+    top: clamp(-5%, 0%, 5%);
+    display: flex;
+    justify-content: center;
+    height: 0;
+    padding: 0.5em;
+    right: 1em;
+    } 
+    .animContainer{
+        display: none;
+    }
+
+
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+
+    .wrapper{
+        height: 100vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-size:cover;
+        margin: 0;
+        background-image: url(/expandedCoffeCup.jpg); 
+        padding: 2em;
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+    }
+    .messageContainer{ 
+        position: relative;
+        margin-top: 10vh;
+        height: 80vh;
+        width: 90vw;
+        padding: 0vh 1vw ;
+    }
+    .message{
+        position: relative; 
+        
+        margin: clamp(0vh, 5vh , 7vh) 0 clamp(0vh, 0vh , 10vh) 0;
+    }
+    .message>p{
+        font-size: 3em;
+        font-weight: bold;
+        text-align: center;
+        margin: 0 0 -25vh 0;
+    }
+    .container{
+        height: 27vh;
+        margin:0 0 -30vh 0;
+    }
+    .mail{
+        position: relative;
+        font-size: 2.5em;
+        text-align: center;
+        margin: 0 0 -3em 0;
+        padding: 0;
+        top: 40vh;
+    }
+    .mail>p{  
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+    .socialWrapper{
+    position:relative;
+    top: clamp(-5%, 0%, 5%);
+    display: flex;
+    justify-content: center;
+    height: 0;
+    padding: 0.5em;
+    } 
+    .animContainer{
+        display: none;
+    }
+
+}
+
+@media all and (max-width: 480px) { 
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin: 0;
+    background-image: url(/expandedCoffeCup.jpg);
+    background-position: center;
+    padding: 2em;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+.messageContainer{ 
+    position: relative;
+    margin-top: 10vh;
+    height: 80vh;
+    width: 90vw;
+    padding-top: 2vh;
+    font-weight: bold;
+}
+.message{
+    position: relative; 
+    
+    margin: clamp(0vh, 5vh , 7vh) 0 clamp(0vh, 0vh , 10vh) 0;
+}
+.message>p{
+    font-size: 2em;
+    text-align: center;
+    margin: 0 0 -25vh 0;
+}
+.container{
+    height: 27vh;
+    margin:0 0 -30vh 0;
+}
+.mail{
+    position: relative;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0 0 -3em 0;
+    padding: 0;
+    top: 40vh;
+}
+.mail>p{  
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.socialWrapper{
+position:relative;
+top: clamp(-5%, 0%, 5%);
+display: flex;
+justify-content: center;
+height: 0;
+padding: 0.5em;
+} 
+.animContainer{
+    display: none;
+}
+}
+
+
+/* Portrait */
+@media screen and (orientation:portrait) {
+    /* Portrait styles here */
+}
+
+/* Landscape */
+@media screen and (orientation:landscape) {
+    /* Landscape styles here */
+}
+
+
+/* CSS for iPhone, iPad, and Retina Displays */
+
+/* Non-Retina */
+@media screen and (-webkit-max-device-pixel-ratio: 1) {}
+
+/* Retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {}
+
+/* iPhone Portrait */
+@media screen and (max-device-width: 480px) and (orientation:portrait) {}
+
+/* iPhone Landscape */
+@media screen and (max-device-width: 480px) and (orientation:landscape) {}
+
+/* iPad Portrait */
+@media screen and (min-device-width: 481px) and (orientation:portrait) {}
+
+/* iPad Landscape */
+@media screen and (min-device-width: 481px) and (orientation:landscape) {}
+ 
+
 .C, .J
 {
   color:#fff;
@@ -35,31 +378,37 @@
 
 .C, .J 
 {
-  animation: smoke 5s forwards ease-in-out infinite;
+  animation: smoke 8s forwards ease-in-out infinite;
 }
 
 @keyframes smoke
 {
   0%
   {
-    transform:rotate(0deg) translateY(0);
+    transform: translateX(15px);
     opacity:0; 
   }
   25%
   {
-    transform:rotate(30deg) translateY(-180px);
+    transform: translateX(0px) translateY(0) rotate(20deg);
     opacity:0.75; 
   }
   
   50%
   {
-    transform:rotate(45deg) translateY(-200px);
+    transform: translateY(-45px) translateX(20px);
+    opacity:0.5; 
+  }
+
+  75%
+  {
+    transform: translateY(0px)  rotate(20deg);
     opacity:0.5; 
   }
 
   100%
   {
-    transform:rotate(0deg) translateY(-90px) translateX(-200px);
+    transform: translateX(15px);
     opacity:0; 
 
   }
@@ -75,55 +424,3 @@
 {
   animation-delay: .2s;
 } 
-
-.message{
-  position: relative;
-  top: 34vh;
-  left: 15vw;
-  font-size: 4vw; 
-  width: 70%;
-}
-.message>p{
-  text-align: end;
-}
- 
-@media screen and (max-width:1000px)
-{
-  .message{
-    position: relative;
-    top: 34vh;
-    left: -44vw;
-    font-size: 4vw;
-    text-shadow: 2px 2px #40281c;
-    width: 70%;
-  }
-
-}
-
-@media screen and (max-width: 700px) {
-  
-  .container{
-    position: relative;
-    top: 5%;
-    left: -80vw;
-    transform: scale(0.75);
-  }
-  .message{
-    position: relative;
-    top: 50%;
-    left: -110vw;
-    font-size: 1.5em;
-    font-weight: bold;
-    height: 1em;
-  }
-  .message>p{
-    text-align: justify;
-  }
-  .messageContainer{
-    position: relative;
-    top: 0;
-    margin: 0 2em;
-
-  }
-}
- 

@@ -3,7 +3,7 @@ import styles from '@/styles/Contact.module.css';
 
 const Anim = ()=>{
 	return(
-	<div className={styles.wrapp}>
+	 
 			<div className={styles.container}>
 				<div className={styles.C}>
 					C
@@ -11,8 +11,7 @@ const Anim = ()=>{
 				<div className={styles.J}>
 					J
 				</div>
-		</div>			
-	</div>
+		</div> 
 	);
 };
 

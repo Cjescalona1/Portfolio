@@ -248,7 +248,7 @@
         list-style: none;
         height: 1em;
         top: 70vh;
-        right: 12vw;
+        right: 0;
     }
     
     .socialListContact>li{
@@ -264,5 +264,9 @@
     .socialList{
         margin: 0;
     }
+
+}
+
+@media all and (max-width: 480px) { 
 
 }
