@@ -14,13 +14,13 @@ const Grid = ()=>{
 					<Image src={'/HTML5_logo_and_wordmark.svg'} alt="HTML" width={80} height={90}/>   
 				</div>
 				<div className={styles.div2}> 
-					<Image src={'/CSS3'} alt="CSS3" width={80} height={90}/>
+					<Image src={'/CSS3'} alt="CSS3" width={70} height={90}/>
 				</div>
 				<div className={styles.div3}> 
 					<Image src={'/JavaScript-logo.png'} alt="JS" width={80} height={90}/>
 				</div>
 				<div className={styles.div4}> 
-					<Image src="/react" alt="ReactJs" width={80} height={90}/>
+					<Image src="/react" alt="ReactJs" width={100} height={90}/>
 				</div>
 				<div className={styles.div5}> 
 					<Image src="/next.svg" alt="Next" width={80} height={90}/>
