@@ -19,8 +19,7 @@ const Header = () => {
 	return (
 		<header className={styles.header}> 
 			<Logo></Logo>
-			<button className={openMenu? styles.op : styles.cl} onClick={() => { setOpenMenu(!openMenu);}} >
-				 
+			<button type='button' className={openMenu? styles.op : styles.cl} onClick={() => { setOpenMenu(!openMenu);}} >
 			</button>
 			<div className={openMenu? styles.wrapBar : styles.wrapBarClose}>
 				<Link   href='/'

@@ -9,7 +9,7 @@ const About = ()=>{
 	return(
 		<section id="About" className={styles.wrapper} >
 			<div className={styles.expDesc1}>
-			I’m a <b>Software Developer</b> with passion for the creativity and the best user experience,
+			<b>Software Developer</b> with passion for the creativity and the best user experience,
 			</div>
 			<div className={styles.expDesc2}>
 			With a degree in   <b>Computer Science</b> and experience in tech remotely  for both startups and established companies.
